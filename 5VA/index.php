@@ -25,9 +25,9 @@
   if(isset($_GET['go'])){
   $query=$_POST['name'];
   //connect  to the database
-  $db=mysql_connect("db.florisdeboer.com", "md322726db343701",  "1me1loMM") or die ('I cannot connect to the database  because: ' . mysql_error());
+  $db=mysql_connect("db.florisdeboer.com", "user",  "pass") or die ('I cannot connect to the database  because: ' . mysql_error());
   //-select  the database to use
-  $mydb=mysql_select_db("md322726db343701");
+  $mydb=mysql_select_db("db");
   //-query  the database table
   $sql="SELECT  Naam, Boek1, Boek2, Boek3, Boek4 FROM boekjes WHERE Boek1 LIKE '%" . $query .  "%' OR Boek2 LIKE '%" . $query ."%' OR Boek3 LIKE '%" . $query .  "%' OR Boek4 LIKE '%" . $query .  "%'";
   //-run  the query against the mysql query function
