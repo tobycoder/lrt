@@ -49,9 +49,9 @@
       $boek4 = $_POST['boek4'];
 
   //connect  to the database
-  $db=mysql_connect("db.florisdeboer.com", "md322726db343701",  "1me1loMM") or die ('Ik ken niet connecten: ' . mysql_error());
+  $db=mysql_connect("db.florisdeboer.com", "user",  "pass") or die ('Ik ken niet connecten: ' . mysql_error());
   //-select  the database to use
-  $mydb=mysql_select_db("md322726db343701");
+  $mydb=mysql_select_db("dbname");
   //-query  the database table
   $sql="INSERT INTO boekjes (Naam, Boek1, Boek2, Boek3, Boek4) VALUES ('$naam', '$boek1', '$boek2', '$boek3', '$boek4')";
   //-run  the query against the mysql query function
