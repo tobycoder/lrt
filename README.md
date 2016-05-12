@@ -1,4 +1,4 @@
-#LRT (Luxor recensie-tool)
+#LRT (Luxor Recensie-Tool)
 De Luxor recensie-tool wordt gebruikt om te visualiseren wie overeenkomstige waardes heeft met de query, oftewel: "Wie heeft hetzelfde boek als ik?" 
 
 ## Gebruik:
